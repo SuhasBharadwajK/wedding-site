@@ -44,6 +44,25 @@
             max-height: 300px;
         }
 
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+        .livestream {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .btn-play span {
+            top: 3px;
+        }
+
         @media (max-width: 767.98px) {
             .carousel-photo {
                 width: auto !important;
@@ -85,10 +104,14 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">are getting married!</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                            <!-- <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/OBL6Kl0qKTM?si=yTkdPzUhsovWzLg3" data-target="#videoModal">
                                 <span></span>
-                            </button>
+                            </button> -->
+                            <a type="button" class="btn-play mx-auto"
+                                href="#live">
+                                <span></span>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -103,10 +126,14 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">Are getting married!</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                            <!-- <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/OBL6Kl0qKTM?si=yTkdPzUhsovWzLg3" data-target="#videoModal">
                                 <span></span>
-                            </button>
+                            </button> -->
+                            <a type="button" class="btn-play mx-auto"
+                                href="#live">
+                                <span></span>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -121,10 +148,14 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">Are getting married!</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                            <!-- <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/OBL6Kl0qKTM?si=yTkdPzUhsovWzLg3" data-target="#videoModal">
                                 <span></span>
-                            </button>
+                            </button> -->
+                            <a type="button" class="btn-play mx-auto"
+                                href="#live">
+                                <span></span>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -139,10 +170,14 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">Are getting married!</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                            <!-- <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/OBL6Kl0qKTM?si=yTkdPzUhsovWzLg3" data-target="#videoModal">
                                 <span></span>
-                            </button>
+                            </button> -->
+                            <a type="button" class="btn-play mx-auto"
+                                href="#live">
+                                <span></span>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -157,10 +192,14 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">Are getting married!</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                            <!-- <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/OBL6Kl0qKTM?si=yTkdPzUhsovWzLg3" data-target="#videoModal">
                                 <span></span>
-                            </button>
+                            </button> -->
+                            <a type="button" class="btn-play mx-auto"
+                                href="#live">
+                                <span></span>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -175,10 +214,14 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">Are getting married!</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                            <!-- <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/OBL6Kl0qKTM?si=yTkdPzUhsovWzLg3" data-target="#videoModal">
                                 <span></span>
-                            </button>
+                            </button> -->
+                            <a type="button" class="btn-play mx-auto"
+                                href="#live">
+                                <span></span>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -218,6 +261,21 @@
     </div>
     <!-- Video Modal End -->
 
+    <!-- Live stream section start -->
+    <div class="container-fluid py-5" id="live">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Join us live!</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+
+            <div class="iframe-container">
+                <!-- TODO: Replace this iframe in case a new stream is required. -->
+                <iframe class="livestream" src="https://www.youtube.com/embed/ZzSt0KquY10?si=8eIuvmsOD6XacQC1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Live stream section end -->
 
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
